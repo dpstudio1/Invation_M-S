@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1050" width="1600" height="1050" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="b" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#1a1020" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#141019" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#08080a" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8b45a"/>
+      <stop offset="100%" stop-color="#7a5c24"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="30"/></filter>
+  </defs>
+  <rect width="1600" height="1050" fill="url(#b)"/>
+  <ellipse cx="800.0" cy="357.0" rx="576.0" ry="210.0" fill="url(#g)" opacity="0.28" filter="url(#soft)"/>
+  <ellipse cx="800.0" cy="787.5" rx="672.0" ry="231.0" fill="#2a160c" opacity="0.5" filter="url(#soft)"/>
+  <circle cx="800.0" cy="441.0" r="320.0" fill="none" stroke="#7a5c24" stroke-opacity="0.5" stroke-width="1.5"/>
+  
+        <g stroke="#e9cf92" stroke-width="3.5" fill="none" transform="translate(800.0,441.0)">
+          <circle cx="-26" cy="0" r="22"/>
+          <circle cx="26" cy="0" r="22"/>
+          <circle cx="-6" cy="-34" r="9" fill="none"/>
+        </g>
+  
+    <g stroke="#c9a85c" fill="none" stroke-width="2" opacity="0.85">
+      <path d="M 128.0 84.0 H 352.0 M 128.0 84.0 V 231.0"/>
+      <path d="M 1472.0 84.0 H 1248.0 M 1472.0 84.0 V 231.0"/>
+      <path d="M 128.0 966.0 H 352.0 M 128.0 966.0 V 819.0"/>
+      <path d="M 1472.0 966.0 H 1248.0 M 1472.0 966.0 V 819.0"/>
+    </g>
+    <rect x="96.0" y="63.0" width="1408.0" height="924.0" fill="none" stroke="#c9a85c" stroke-width="3" opacity="0.9"/>
+    <rect x="104.0" y="68.25" width="1392.0" height="913.5" fill="none" stroke="#7a5c24" stroke-width="1.2" opacity="0.6"/>
+    
+  <text x="800.0" y="609.0" text-anchor="middle" font-family="Cinzel, 'Times New Roman', serif" font-size="80.0" letter-spacing="6" fill="#e9cf92">THE COUPLE</text>
+  <g font-family="Amiri, 'Traditional Arabic', serif" fill="#f2e9d8" text-anchor="middle">
+    <text x="800.0" y="735.0" font-size="88.0" fill="#e9cf92">ضع الصورة الحقيقية هنا</text>
+    <text x="800.0" y="777.0" font-size="52.800000000000004" fill="#f2e9d8" opacity="0.75">صورة العروسين معًا</text>
+  </g>
+  <text x="800.0" y="0" text-anchor="middle" fill="none"/>
+</svg>
