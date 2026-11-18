@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="b" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#1a1020" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#141019" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#08080a" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8b45a"/>
+      <stop offset="100%" stop-color="#7a5c24"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="30"/></filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#b)"/>
+  <ellipse cx="600.0" cy="510.00000000000006" rx="432.0" ry="300.0" fill="url(#g)" opacity="0.5" filter="url(#soft)"/>
+  <ellipse cx="600.0" cy="1125.0" rx="504.0" ry="330.0" fill="#2a160c" opacity="0.5" filter="url(#soft)"/>
+  <circle cx="600.0" cy="630.0" r="240.0" fill="none" stroke="#7a5c24" stroke-opacity="0.5" stroke-width="1.5"/>
+  
+        <g stroke="#e9cf92" stroke-width="3.5" fill="none" transform="translate(600.0,630.0)">
+          <circle cx="-26" cy="0" r="22"/>
+          <circle cx="26" cy="0" r="22"/>
+          <circle cx="-6" cy="-34" r="9" fill="none"/>
+        </g>
+  
+    <g stroke="#c9a85c" fill="none" stroke-width="2" opacity="0.85">
+      <path d="M 96.0 120.0 H 264.0 M 96.0 120.0 V 330.0"/>
+      <path d="M 1104.0 120.0 H 936.0 M 1104.0 120.0 V 330.0"/>
+      <path d="M 96.0 1380.0 H 264.0 M 96.0 1380.0 V 1170.0"/>
+      <path d="M 1104.0 1380.0 H 936.0 M 1104.0 1380.0 V 1170.0"/>
+    </g>
+    <rect x="72.0" y="90.0" width="1056.0" height="1320.0" fill="none" stroke="#c9a85c" stroke-width="3" opacity="0.9"/>
+    <rect x="78.0" y="97.5" width="1044.0" height="1305.0" fill="none" stroke="#7a5c24" stroke-width="1.2" opacity="0.6"/>
+    
+  <text x="600.0" y="869.9999999999999" text-anchor="middle" font-family="Cinzel, 'Times New Roman', serif" font-size="60.0" letter-spacing="6" fill="#e9cf92">THE GROOM</text>
+  <g font-family="Amiri, 'Traditional Arabic', serif" fill="#f2e9d8" text-anchor="middle">
+    <text x="600.0" y="1050.0" font-size="66.0" fill="#e9cf92">ضع الصورة الحقيقية هنا</text>
+    <text x="600.0" y="1110.0" font-size="39.6" fill="#f2e9d8" opacity="0.75">صورة العريس</text>
+  </g>
+  <text x="600.0" y="0" text-anchor="middle" fill="none"/>
+</svg>

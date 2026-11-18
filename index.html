@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0d">
+<meta name="description" content="دعوة زفاف إلكترونية فاخرة">
+<title>دعوة زفاف — A Beautiful Beginning</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230a0a0d' stroke='%23d8b45a' stroke-width='4'/%3E%3Cpath d='M38 62 L62 38 M46 34 a8 8 0 0 0 0 0 M54 66 a8 8 0 0 0 0 0' stroke='%23f0d795' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="css/style.css">
+
+<noscript><style>
+  #stage { display: none !important; }
+  .js .reveal { opacity: 1 !important; transform: none !important; }
+  .scroll-progress, .audio-toggle { display: none; }
+</style></noscript>
+</head>
+
+<body class="locked">
+
+<!-- ============ CINEMATIC STAGE ============ -->
+<div id="stage" class="stage" aria-label="دعوة الزفاف">
+
+  <!-- Intro -->
+  <div id="intro" class="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+    <div class="intro-lights" aria-hidden="true">
+      <span class="light-a"></span>
+      <span class="light-b"></span>
+      <span class="light-c"></span>
+    </div>
+    <div class="intro-orn" aria-hidden="true">
+      <span class="orn-dot a"></span>
+      <span class="orn-dot b"></span>
+    </div>
+    <canvas id="canvas-intro" class="canvas-particles" aria-hidden="true"></canvas>
+
+    <div class="intro-inner">
+      <p class="intro-eyebrow">The Wedding Of</p>
+
+      <div class="monogram" aria-hidden="true">
+        <span class="ring--glow"></span>
+        <span class="ring"></span>
+        <span class="ring--spin"></span>
+        <span class="ring--inner"></span>
+        <span class="letters"><span data-i18n="monogram">M</span><span class="amp">&amp;</span><span data-i18n="monogram2">S</span></span>
+      </div>
+
+      <h1 id="intro-title" class="intro-title gold-gradient-text">A Beautiful Beginning</h1>
+      <p class="intro-sub" data-i18n="introSub">حكاية حب، وذكريات تبقى مدى العمر</p>
+      <p class="intro-names" dir="ltr" data-i18n="introNames">THE GROOM &amp; THE BRIDE</p>
+
+      <button id="open-btn" class="open-btn" type="button" data-i18n="openBtn">افتح الدعوة</button>
+    </div>
+  </div>
+
+  <!-- Doors -->
+  <div id="doors" class="doors-wrap" aria-hidden="true">
+    <div class="door door--left">
+      <span class="door-detail"></span>
+    </div>
+    <div class="door door--right">
+      <span class="door-detail"></span>
+    </div>
+    <div class="door-seam"></div>
+  </div>
+
+  <!-- Hall -->
+  <div id="hall" class="hall" aria-label="قاعة الأفراح الملكية">
+    <div id="hall-bg" class="hall-bg"></div>
+    <div class="hall-flare" aria-hidden="true"></div>
+    <canvas id="canvas-hall" class="canvas-particles" aria-hidden="true"></canvas>
+    <div id="arrival" class="arrival">
+      <span class="arr-en" data-i18n="arrEn" style=" font-size: x-large;">A LOVE STORY BEGINS</span>
+      <span class="arr-ar" data-i18n="arrAr" style=" font-size: xx-large;">حكاية حبّ تبدأ</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SCROLLABLE SITE ============ -->
+<div class="scroll-progress" aria-hidden="true"></div>
+<canvas id="canvas-site" class="particles-fixed" aria-hidden="true"></canvas>
+
+<main class="site">
+
+
+  <!-- ============ HERO · NAMES ============ -->
+  <section id="hero" class="section hero" aria-labelledby="hero-title">
+    <div class="hero-lights parallax" aria-hidden="true">
+      <span class="hl-a"></span>
+      <span class="hl-b"></span>
+    </div>
+
+    <div class="hero-frame reveal">
+      <span class="corner tl" aria-hidden="true"></span>
+      <span class="corner tr" aria-hidden="true"></span>
+      <span class="corner bl" aria-hidden="true"></span>
+      <span class="corner br" aria-hidden="true"></span>
+      <span class="hero-glow-behind" aria-hidden="true"></span>
+      <div class="inner">
+        <span id="hero-title" class="hero-eyebrow reveal" data-i18n="headlineEn">Together With Their Families</span>
+
+        <div class="hero-names">
+          <div class="hero-name--ar hero-name reveal" style="--d:.08s" data-i18n="groomAr">العريس محمد</div>
+          <div class="hero-name--en hero-name reveal" style="--d:.16s" data-i18n="groomEn">THE GROOM</div>
+
+          <div class="hero-amp reveal" style="--d:.3s" aria-hidden="true">
+            <span class="line l"></span>
+            <span class="amp-gap"><span class="dia"></span><span class="amp">&amp;</span><span class="dia"></span></span>
+            <span class="line r"></span>
+          </div>
+
+          <div class="hero-name--en hero-name reveal" style="--d:.42s" data-i18n="brideEn">THE BRIDE</div>
+          <div class="hero-name--ar hero-name reveal" style="--d:.5s" data-i18n="brideAr">العروس سارة</div>
+        </div>
+
+        <div class="hero-date">
+          <div class="date-en reveal" style="--d:.62s" data-i18n="dateEn">FRIDAY · DECEMBER 25, 2026</div>
+          <div class="date-ar reveal" style="--d:.7s" data-i18n="dateAr">الجمعة — ٢٥ ديسمبر ٢٠٢٦</div>
+        </div>
+
+        <p class="hero-welcome reveal" style="--d:.8s" data-i18n="welcomeAr">بكل الحب، ندعوكم لمشاركتنا أجمل لحظات العمر</p>
+
+        <div class="flourish flourish--big reveal" style="--d:.9s" aria-hidden="true">
+          <span class="f-line l"></span><span class="f-dia"></span><span class="f-line r"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <span class="hint-line"></span>
+    </div>
+  </section>
+
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" class="section section--soft-bg" aria-labelledby="gallery-title">
+    <div class="section-deco" aria-hidden="true"></div>
+    <h2 id="gallery-title" class="sec-title reveal gold-gradient-text">Our Moments</h2>
+    <p class="sec-sub reveal" style="--d:.12s" data-i18n="gallerySub">لحظات جمعت قلبينا، وقادتها بنا الطريق إلى هذا اليوم</p>
+    <div class="sec-flourish flourish reveal" style="--d:.2s" aria-hidden="true">
+      <span class="f-line l"></span><span class="f-dia"></span><span class="f-line r"></span>
+    </div>
+
+    <figure class="gal-main reveal reveal--zoom" style="--d:.15s">
+      <div class="img-frame">
+        <img data-img="coupleMain" src="assets/images/couple-main.svg" alt="صورة العروسين معًا" loading="lazy" decoding="async">
+      </div>
+      <figcaption class="gal-caption">
+        <span class="cap-dia" aria-hidden="true"></span>
+        <span data-i18n="galCaption">من بداية الحكاية إلى قصة العمر</span>
+        <span class="cap-dia" aria-hidden="true"></span>
+      </figcaption>
+    </figure>
+
+    <div class="portraits">
+      <figure class="portrait reveal reveal--left">
+        <div class="img-frame">
+          <img data-img="bride" src="assets/images/bride.svg" alt="صورة العروس" loading="lazy" decoding="async">
+        </div>
+        <figcaption>
+          <div class="p-lbl">THE BRIDE</div>
+          <div class="p-lbl-ar" data-i18n="brideLbl">أجمل ما خلق الرحمن</div>
+        </figcaption>
+      </figure>
+      <figure class="portrait reveal reveal--right">
+        <div class="img-frame">
+          <img data-img="groom" src="assets/images/groom.svg" alt="صورة العريس" loading="lazy" decoding="async">
+        </div>
+        <figcaption>
+          <div class="p-lbl">THE GROOM</div>
+          <div class="p-lbl-ar" data-i18n="groomLbl">صاحب القلب الطيب</div>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="gal-grid">
+      <div class="img-frame reveal reveal--zoom" style="--d:.05s"><img data-img="gallery-0" src="assets/images/gallery/photo-1.svg" alt="" loading="lazy" decoding="async"></div>
+      <div class="img-frame reveal reveal--zoom" style="--d:.15s"><img data-img="gallery-1" src="assets/images/gallery/photo-2.svg" alt="" loading="lazy" decoding="async"></div>
+      <div class="img-frame reveal reveal--zoom" style="--d:.25s"><img data-img="gallery-2" src="assets/images/gallery/photo-3.svg" alt="" loading="lazy" decoding="async"></div>
+      <div class="img-frame reveal reveal--zoom" style="--d:.35s"><img data-img="gallery-3" src="assets/images/gallery/photo-4.svg" alt="" loading="lazy" decoding="async"></div>
+    </div>
+  </section>
+
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section id="countdown" class="section section--burg-bg countdown" aria-labelledby="cd-title">
+    <h2 id="cd-title" class="sec-title reveal gold-gradient-text" data-i18n="cdTitle">THE COUNTDOWN TO FOREVER</h2>
+    <p class="countdown-quote reveal" style="--d:.12s" data-i18n="cdQuote">«لم يتبقَّ سوى القليل لنحتفل معًا ببداية حكاية جديدة»</p>
+    <div class="sec-flourish flourish reveal" style="--d:.2s" aria-hidden="true">
+      <span class="f-line l"></span><span class="f-dia"></span><span class="f-line r"></span>
+    </div>
+
+    <div class="cd-grid" role="timer" aria-label="العد التنازلي للزفاف">
+      <div class="cd-box reveal" style="--d:.05s">
+        <span id="cd-days" class="cd-num gold-gradient-text">00</span>
+        <span class="cd-label" data-i18n="cdDays">يوم</span>
+      </div>
+      <div class="cd-box reveal" style="--d:.12s">
+        <span id="cd-hours" class="cd-num gold-gradient-text">00</span>
+        <span class="cd-label" data-i18n="cdHours">ساعة</span>
+      </div>
+      <div class="cd-box reveal" style="--d:.19s">
+        <span id="cd-min" class="cd-num gold-gradient-text">00</span>
+        <span class="cd-label" data-i18n="cdMin">دقيقة</span>
+      </div>
+      <div class="cd-box reveal" style="--d:.26s">
+        <span id="cd-sec" class="cd-num gold-gradient-text">00</span>
+        <span class="cd-label" data-i18n="cdSec">ثانية</span>
+      </div>
+    </div>
+
+    <div class="cd-details">
+      <span class="cd-chip reveal" style="--d:.15s">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 9h18"/></svg>
+        <span data-i18n="cdDateChip">الجمعة ٢٥ ديسمبر ٢٠٢٦</span>
+      </span>
+      <span class="cd-chip reveal" style="--d:.22s">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span data-i18n="cdTimeChip">الساعة 7:00 مساءً</span>
+      </span>
+    </div>
+
+    <div id="cd-done" class="cd-done reveal" data-i18n="cdDoneEn">Today Is The Day</div>
+    <div id="cd-done-ar" class="cd-done-ar reveal" data-i18n="cdDoneAr">لقد حان الموعد… ننتظركم لبداية لا تنتهي</div>
+  </section>
+
+
+  <!-- ============ VENUE ============ -->
+  <section id="venue" class="section section--soft-bg" aria-labelledby="venue-title">
+    <h2 id="venue-title" class="sec-title reveal gold-gradient-text">The Venue</h2>
+    <p class="sec-sub reveal" style="--d:.12s" data-i18n="venueSub">حيث يلتقي حبنا بالضيافة، نستقبلكم بين الأهل والأحبة</p>
+    <div class="sec-flourish flourish reveal" style="--d:.2s" aria-hidden="true">
+      <span class="f-line l"></span><span class="f-dia"></span><span class="f-line r"></span>
+    </div>
+
+    <div class="venue-card reveal reveal--zoom" style="--d:.15s">
+      <div class="venue-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      </div>
+      <h3 class="venue-name-ar reveal" style="--d:.2s" data-i18n="venueNameAr">قاعة الليالي الملكية</h3>
+      <div class="venue-name-en reveal" style="--d:.28s" data-i18n="venueNameEn">ROYAL NIGHTS HALL</div>
+
+      <div class="venue-meta reveal" style="--d:.36s">
+        <div class="meta-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <span data-i18n="venueCityAr">القاهرة — مصر</span>
+          <span class="meta-en" data-i18n="venueCityEn">CAIRO · EGYPT</span>
+        </div>
+        <div class="meta-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          <span data-i18n="venueAddr">شارع المتحف، أمام حديقة الأطفال، الزمالك</span>
+        </div>
+        <div class="meta-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span data-i18n="venueRec">استقبال الضيوف: 6:30 مساءً</span>
+        </div>
+      </div>
+
+      <div class="flourish reveal" style="--d:.44s" aria-hidden="true">
+        <span class="f-line l"></span><span class="f-dia"></span><span class="f-line r"></span>
+      </div>
+
+      <a id="map-btn" class="map-btn reveal" style="--d:.5s" href="https://www.google.com/maps/search/?api=1&query=Cairo+Egypt" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <span class="map-btn-ar" data-i18n="mapBtnAr">عرض موقع القاعة</span>
+        <span class="map-btn-en" data-i18n="mapBtnEn">· View on map</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ============ FINALE ============ -->
+  <section id="finale" class="section finale" aria-labelledby="finale-title">
+    <h2 id="finale-title" class="sec-title reveal gold-gradient-text">A Love Story That Never Ends</h2>
+    <p class="finale-quote reveal" style="--d:.15s" data-i18n="finaleQuote">بوجودكم تكتمل فرحتنا، وبمشاركتكم تصبح لحظاتنا أجمل</p>
+
+    <div class="flourish reveal" style="--d:.28s" aria-hidden="true">
+      <span class="f-line l"></span><span class="f-dia"></span><span class="f-line r"></span>
+    </div>
+
+    <div class="finale-names">
+      <div class="f-name f-name--ar reveal" style="--d:.4s" data-i18n="groomAr2">محمد</div>
+      <div class="f-name--en f-name reveal" style="--d:.48s" data-i18n="finaleAmp">· &amp; ·</div>
+      <div class="f-name f-name--ar reveal" style="--d:.56s" data-i18n="brideAr2">سارة</div>
+    </div>
+
+    <div class="monogram reveal reveal--zoom" style="--d:.7s" aria-hidden="true">
+      <span class="ring--glow"></span>
+      <span class="ring"></span>
+      <span class="ring--spin"></span>
+      <span class="ring--inner"></span>
+      <span class="letters"><span data-i18n="monogram">M</span><span class="amp">&amp;</span><span data-i18n="monogram2">S</span></span>
+    </div>
+
+    <div class="flourish reveal" style="--d:.8s" aria-hidden="true">
+      <span class="f-line l"></span><span class="f-dia"></span><span class="f-line r"></span>
+    </div>
+  </section>
+
+  <div class="end-fade" aria-hidden="true"></div>
+
+  <footer class="site-footer">
+    <div class="f-en">With Love · 25 · 12 · 2026</div>
+    <p>نتطلع إلى مشاركتكم فرحتنا، ونشكركم على حضوركم في بداية حكايتنا</p>
+  </footer>
+
+</main>
+
+<!-- ============ AUDIO CONTROL ============ -->
+<button id="audio-toggle" class="audio-toggle" type="button" aria-label="تشغيل الموسيقى" aria-pressed="false">
+  <span class="wrap">
+    <span class="disc" aria-hidden="true"></span>
+    <span class="icon icon--note" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+        <path d="M9 18V6l10-2v11.5"/>
+        <circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="15.5" r="2.5"/>
+      </svg>
+    </span>
+    <span class="icon icon--muted" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+        <path d="M9 18V6l10-2v11.5"/><path d="M21 3 3 21"/><circle cx="16.5" cy="15.5" r="2.5"/>
+      </svg>
+    </span>
+  </span>
+</button>
+
+<div id="cursor" class="cursor-ring" aria-hidden="true"></div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="معرض الصور">
+  <button id="lightbox-close" class="lightbox-close" type="button" aria-label="إغلاق">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+  <div id="lightbox-caption" class="lightbox-caption"></div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
